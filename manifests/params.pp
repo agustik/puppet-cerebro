@@ -3,7 +3,7 @@ class cerebro::params {
   $address        = undef
   $service_ensure = 'running'
   $service_enable = true
-  $secret         = cache_data('cerebro_cache_data', 'cerebro_secret', random_password(32))
+  $secret         = 'my-super-secret-value-to-not-have-to-use-random_password-function-as-it-does-not-ship-with-puppet'
   $hosts          = []
   $basepath       = '/'
   $cerebro_user   = 'cerebro'
